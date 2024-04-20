@@ -1,0 +1,23 @@
+[
+  {
+    "id": "01",
+    "image": "/cardImage01.jpg",
+    "title": "I am a designer, looking to share my work",
+    "label": "self-work",
+    "description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…"
+  },
+  {
+    "id": "02",
+    "image": "/cardImage02.jpg",
+    "title": "I'm looking to hire a designer",
+    "label": "hire-designer",
+    "description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…"
+  },
+  {
+    "id": "03",
+    "image": "/cardImage03.jpg",
+    "title": "I'm looking for design inspiration",
+    "label": "inspiration",
+    "description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…"
+  }
+]
