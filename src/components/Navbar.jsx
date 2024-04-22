@@ -52,7 +52,7 @@ const Navbar = ({ data, setData }) => {
           />
 
           <button
-            className=" focus:outline-none "
+            className=" focus:outline-none xl:hidden block  "
             onClick={toggleMenu}
           >
             <MenuIcon
