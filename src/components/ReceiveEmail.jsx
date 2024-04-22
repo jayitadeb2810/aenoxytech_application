@@ -12,7 +12,7 @@ const ReceiveEmail = () => {
 
   const emailResendHandler = async () => {
     try {
-      await axios.get(
+      await axiosConfig.get(
         "/api/J3/emailresend",
         {
           headers: {
