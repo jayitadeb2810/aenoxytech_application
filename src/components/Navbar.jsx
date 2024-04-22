@@ -5,6 +5,7 @@ import SearchIcon from "@mui/icons-material/Search"
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter"
 import CloseIcon from "@mui/icons-material/Close"
 import MenuIcon from "@mui/icons-material/Menu"
+import axiosConfig from "../config/axiosConfig"
 
 const Navbar = ({ data, setData }) => {
   const [isMenuOpen, setIsMenuOpen] =
@@ -18,7 +19,7 @@ const Navbar = ({ data, setData }) => {
     const fetchData = async () => {
       try {
         // Make API call using Axios
-        const res = await axios.get(
+        const res = await axiosConfig.get(
           "/api/J3/profile",
           {
             headers: {
