@@ -1,4 +1,3 @@
-import axios from "axios"
 import React from "react"
 import { useEffect } from "react"
 import { useState } from "react"
@@ -20,7 +19,7 @@ const Navbar = ({ data, setData }) => {
       try {
         // Make API call using Axios
         const res = await axios.get(
-          "http://localhost:5000/api/J3/profile",
+          "/api/J3/profile",
           {
             headers: {
               Authorization:

@@ -4,7 +4,7 @@ import EmailIcon from "@mui/icons-material/Email"
 import CheckIcon from "@mui/icons-material/Check"
 import { useState } from "react"
 import { Footer } from "./Footer"
-import axios from "axios"
+import axiosConfig from "../config/axiosConfig"
 
 const ReceiveEmail = () => {
   const [data, setData] = useState("")
@@ -13,7 +13,7 @@ const ReceiveEmail = () => {
   const emailResendHandler = async () => {
     try {
       await axios.get(
-        "http://localhost:5000/api/J3/emailresend",
+        "/api/J3/emailresend",
         {
           headers: {
             Authorization:

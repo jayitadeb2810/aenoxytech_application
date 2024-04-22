@@ -1,8 +1,8 @@
 import React, { useState } from "react"
-import axios from "axios"
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord"
 import ReportProblemIcon from "@mui/icons-material/ReportProblem"
 import { useNavigate } from "react-router-dom"
+import axiosConfig from "../config/axiosConfig"
 
 const Signup = () => {
   const navigate = useNavigate()
@@ -40,8 +40,8 @@ const Signup = () => {
   const onSubmit = async (e) => {
     e.preventDefault()
     try {
-      const { data } = await axios.post(
-        "http://localhost:5000/api/J3/signup",
+      const { data } = await axiosConfig.post(
+        "/api/J3/signup",
         {
           name,
           username,

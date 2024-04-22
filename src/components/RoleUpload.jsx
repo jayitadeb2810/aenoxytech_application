@@ -1,11 +1,11 @@
 import React from "react"
-import axios from "axios"
 import Card from "./Card"
 import localData from "../data.json"
 import { useState } from "react"
 import { useEffect } from "react"
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import { useNavigate } from "react-router-dom"
+import axiosConfig from "../config/axiosConfig"
 
 const RoleUpload = ({
   handlePrevious,
@@ -47,8 +47,8 @@ const RoleUpload = ({
       .filter((card) => card.isChecked)
       .map((card) => card.label)
     try {
-      const { data } = await axios.post(
-        "http://localhost:5000/api/J3/profile/create",
+      const { data } = await axiosConfig.post(
+        "/api/J3/profile/create",
         {
           image,
           location,
