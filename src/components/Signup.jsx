@@ -68,7 +68,7 @@ const Signup = () => {
   return (
     <div className=" flex  lg:justify-between lg:flex-row flex-col ">
       <img
-        className="lg:w-[35%] lg:h-[100vh] w-full h-[100vh]"
+        className="lg:w-[35%] lg:h-[100vh] w-full h-[100vh] md:h-auto"
         src="/frontpageImage.jpg"
         alt="frontPageImage"
         // style={{
@@ -76,7 +76,7 @@ const Signup = () => {
         //   height: "100vh",
         // }}
       />
-      <div className=" flex xl:flex-row flex-col xl:justify-center xl:items-start justify-center items-center xl:mt-[60px] md:h-[100vh] xl:h-[calc(100%-60px)]  ">
+      <div className=" flex xl:flex-row flex-col xl:justify-center xl:items-start justify-center items-center xl:mt-[60px] xl:h-[calc(100%-60px)]  ">
         <form
           className=" xl:ms-auto  xl:w-[50%] w-[70%] "
           onSubmit={(e) => onSubmit(e)}
