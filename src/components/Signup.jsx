@@ -68,7 +68,7 @@ const Signup = () => {
   return (
     <div className=" flex  lg:justify-between lg:flex-row flex-col ">
       <img
-        className="lg:w-[35%] lg:h-[100vh] w-full h-[100vh] md:h-auto"
+        className="lg:w-[35%] xl:h-[100vh] w-full h-[100vh] lg:sticky lg:top-0 lg:left-0 "
         src="/frontpageImage.jpg"
         alt="frontPageImage"
         // style={{
